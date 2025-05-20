@@ -3,7 +3,7 @@
 #include <time.h>
 
 //Guardar memoria dinámica
-void allocateMatrix  (int ***matrix, int filas, int columnas) {
+void allocateMatrix  (int ***matrix, int filas, int columnas) {   //Función para reservar espacio
         *matrix = malloc(size * sizeof(int *));
         for (int i = 0; i < filas; i++) {
 		for (int j = 0; j < columnas; j++) {
